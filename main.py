@@ -16,7 +16,7 @@ def main():
     FONT_SIZE = calculate_font_size(WIDTH, HEIGHT)
     COLUMNS = WIDTH // FONT_SIZE
     ROWS = HEIGHT // FONT_SIZE
-    print(pygame.font.get_fonts())
+    #print(pygame.font.get_fonts())
     
     # init display module and set font
     screen = pygame.display.set_mode((WIDTH, HEIGHT), display=display)

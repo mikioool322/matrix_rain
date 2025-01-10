@@ -29,7 +29,7 @@ def pre_render_chars_with_colors(font, chars, base_color, steps):
             factor = 1 - (step / (steps - 1))  
 
             if step == 0:
-                color = base_color # if its bottom char set color to base color
+                color = (255,255,255) # if its bottom char set color to base color
             else:
                 color = fade_color(base_color, factor) # fade color gradually
 
