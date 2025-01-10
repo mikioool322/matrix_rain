@@ -1,6 +1,6 @@
 import random
 import string
-from settings import FONT_FACTOR, FG_COLOR
+from settings import FONT_FACTOR
 
 # calculate font size depending on screen size
 def calculate_font_size(w, h, factor=FONT_FACTOR):
@@ -29,7 +29,7 @@ def pre_render_chars_with_colors(font, chars, base_color, steps):
             factor = 1 - (step / (steps - 1))  
 
             if step == 0:
-                color = FG_COLOR # if its bottom char set color to white
+                color = base_color # if its bottom char set color to base color
             else:
                 color = fade_color(base_color, factor) # fade color gradually
 
